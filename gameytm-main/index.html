@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Game Sampah!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- UI Game -->
+        <div class="game-ui">
+            <div class="score">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZkYzQyIiBkPSJNNDczLjcgNzMuOGMtNy41LTcuNS0xOS44LTcuNS0yNy4zIDBMNDM0LjMgOTBjLTkuOC05LjgtMjYuMi05LjgtMzYgMEwyNzIgMjE2LjIgMTEzLjcgNTcuN2MtOS44LTkuOC0yNi4yLTkuOC0zNiAwTDkwIDczLjdjLTcuNSA3LjUtNy41IDE5LjggMCAyNy4zbDIxNiAyMTZjNy41IDcuNSAxOS44IDcuNSAyNy4zIDBsMjE2LTIxNmM3LjUtNy41IDcuNS0xOS44IDAtMjcuM3oiLz48L3N2Zz4=" alt="Score">
+                <span id="scoreValue">0</span>
+            </div>
+            <div class="lives">
+                <img src="ijo.jpg" alt="Lives">
+                <span id="livesValue">5</span>
+            </div>
+            <div class="time">
+                <span>⏱️</span>
+                <span id="timeValue">00:00</span>
+            </div>
+        </div>
+
+        <!-- Kontrol Mobile -->
+        <div class="controls">
+            <div class="d-pad">
+                <button class="control-btn left-btn">←</button>
+                <button class="control-btn right-btn">→</button>
+            </div>
+            <button class="action-btn">BUANG</button>
+        </div>
+
+        <!-- Layar Mulai -->
+        <div class="start-screen" id="startScreen">
+            <h1>PETUALANGAN BERSIH</h1>
+            <p>Pungut sampah dan buang ke tempat yang benar!</p>
+            <button id="startButton">MULAI</button>
+        </div>
+
+        <!-- Game Over -->
+        <div class="game-over hidden" id="gameOver">
+            <h2>GAME OVER!</h2>
+            <p>Skor Akhir: <span id="finalScore">0</span></p>
+            <button id="restartButton">MAIN LAGI</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
